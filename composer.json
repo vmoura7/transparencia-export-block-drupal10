@@ -1,0 +1,8 @@
+{
+    "name": "drupal/transparencia_export_block",
+    "description": "Módulo para exportação de conteúdo em JSON, XML e PDF.",
+    "type": "drupal-module",
+    "require": {
+        "mpdf/mpdf": "^8.2"
+    }
+}

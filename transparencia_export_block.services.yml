@@ -1,0 +1,16 @@
+services:
+  transparencia_export_block.export_node_decorator:
+    class: Drupal\transparencia_export_block\Decorator\ExportNodeDecorator
+    arguments: ["@entity_type.manager"]
+
+  transparencia_export_block.excluded_paths_repository:
+    class: Drupal\transparencia_export_block\Repository\ExcludedPathsRepository
+    public: true
+
+  transparencia_export_block.export_node_repository:
+    class: Drupal\transparencia_export_block\Repository\ExportNodeRepository
+
+  transparencia_export_block.settings_form:
+    class: Drupal\transparencia_export_block\Form\TransparenciaExportBlockSettingsForm
+    tags:
+      - { name: form, form_id: transparencia_export_block_settings }

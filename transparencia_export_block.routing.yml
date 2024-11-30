@@ -1,0 +1,17 @@
+transparencia_export_block.export:
+  path: '/transparencia/export/{nid}/{format}'
+  defaults:
+    _controller: '\Drupal\transparencia_export_block\Controller\ExportController::export'
+    _title: 'Exportar Nó'
+  requirements:
+    _permission: 'access content'
+    nid: '\d+'
+    format: '[a-z]+'
+
+transparencia_export_block.settings:
+  path: '/admin/config/services/transparencia-export'
+  defaults:
+    _form: '\Drupal\transparencia_export_block\Form\TransparenciaExportBlockSettingsForm'
+    _title: 'Transparência Export Block Settings'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Arquivo principal para o módulo Transparência Export Block.
+ *
+ * Use este arquivo para implementar hooks específicos do Drupal,
+ * como alter hooks, event subscribers ou outras integrações globais.
+ */
+
+/**
+ * Implements hook_help().
+ *
+ * Adiciona informações de ajuda para o módulo.
+ */
+function transparencia_export_block_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.transparencia_export_block':
+      return '<p>' . t('O módulo Transparência Export Block adiciona um bloco que exporta conteúdo do nó em JSON ao clicar no ícone.') . '</p>';
+  }
+}

@@ -1,0 +1,17 @@
+.export-json-container {
+  display: flex;
+  gap: 10px;
+}
+
+.export-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.export-button img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
